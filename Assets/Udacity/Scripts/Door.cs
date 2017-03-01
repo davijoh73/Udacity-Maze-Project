@@ -4,23 +4,36 @@ using UnityEngine;
 
 public class Door : MonoBehaviour 
 {
-    // Create a boolean value called "locked" that can be checked in OnDoorClicked() 
-    // Create a boolean value called "opening" that can be checked in Update() 
+    //The locked variable is used in the Unlock method to "unlock" the door
+    public bool locked = true;
+    //Trigger used to open the door once it's unlocked
+    public bool openDoor = false;
+    //Sound clips used for when the door is locked, and when it's opened
+    public AudioSource soundSource;
+    public AudioClip doorLocked;
+    public AudioClip doorOpen;
 
     void Update() {
-        // If the door is opening and it is not fully raised
-            // Animate the door raising up
+        //I don't need this - I will open the doors using an animation script instead
     }
 
     public void OnDoorClicked() {
-        // If the door is clicked and unlocked
-            // Set the "opening" boolean to true
-        // (optionally) Else
-            // Play a sound to indicate the door is locked
+        if (locked == false)
+        {
+            //Trigger the door to open via animation script
+            openDoor = true;
+        }
+        else
+        {
+            //Play locked door audio clip
+            soundSource.clip = doorLocked;
+            soundSource.Play();
+        }
     }
 
     public void Unlock()
     {
-        // You'll need to set "locked" to false here
+        //Call this method to unlock the door - like when you find the key
+        locked = false;
     }
 }
