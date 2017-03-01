@@ -11,7 +11,7 @@ public class Key : MonoBehaviour
     void Update()
 	{
 		//Not required, but for fun why not try adding a Key Floating Animation here :)
-        //I made my key spin using a Unity animation for now
+            //I made my key spin using a Unity animation for now
 	}
 
 	public void OnKeyClicked()
@@ -21,8 +21,8 @@ public class Key : MonoBehaviour
         Instantiate(keyPoof, transform.position, Quaternion.Euler(-90, 0, 0));
         // Call the Unlock() method on the Door
         theDoor.GetComponent<Door>().Unlock();
-        // Set the Key Collected Variable to true?
-
+        // Set the Key Collected Variable to true
+            //Useful for in-game inventory maybe?
         // Destroy the key. Check the Unity documentation on how to use Destroy
         Destroy(gameObject, 0.2f);
     }

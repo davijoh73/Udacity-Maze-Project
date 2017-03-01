@@ -22,6 +22,7 @@ public class Door : MonoBehaviour
         {
             //Trigger the door to open via animation script
             openDoor = true;
+            Debug.Log("The door is opening now!");
         }
         else
         {
