@@ -39,7 +39,7 @@ public class Door : MonoBehaviour
 
     public void Unlock()
     {
-        //Call this method to unlock the door - like when you find the key
+        //Call this method to unlock the door
         locked = false;
     }
 }
