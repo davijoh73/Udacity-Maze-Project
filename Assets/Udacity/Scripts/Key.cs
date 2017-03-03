@@ -7,6 +7,7 @@ public class Key : MonoBehaviour
     //Create a reference to the KeyPoofPrefab and Door
     public GameObject keyPoof;
     public GameObject theDoor;
+    public bool keyCollected = false;
 
     void Update()
 	{
@@ -22,7 +23,7 @@ public class Key : MonoBehaviour
         // Call the Unlock() method on the Door
         theDoor.GetComponent<Door>().Unlock();
         // Set the Key Collected Variable to true
-            //Useful for in-game inventory maybe?
+        keyCollected = true;
         // Destroy the key. Check the Unity documentation on how to use Destroy
         Destroy(gameObject, 0.2f);
     }

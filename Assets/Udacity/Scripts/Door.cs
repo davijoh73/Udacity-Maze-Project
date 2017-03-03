@@ -14,15 +14,20 @@ public class Door : MonoBehaviour
     public AudioClip doorOpen;
 
     void Update() {
-        //I don't need this - I will open the doors using an animation script instead
+        //If door is unlocked and not fully raised, continue raising door
+        if (openDoor && transform.position.y < 7.5f)
+        {
+            transform.Translate(0, 1.5f * Time.deltaTime, 0, Space.World);
+        }
     }
 
     public void OnDoorClicked() {
         if (locked == false)
         {
-            //Trigger the door to open via animation script
+            //Trigger the door to open via animation script and play opening door sound
             openDoor = true;
-            Debug.Log("The door is opening now!");
+            soundSource.clip = doorOpen;
+            soundSource.Play();
         }
         else
         {
