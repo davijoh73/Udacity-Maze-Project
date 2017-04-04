@@ -1,4 +1,8 @@
-<b>Name:</b> Dave Johnston
+#Udacity Maze Project
+This project is part of the Udacity VR Nanodegree program, and consists of a maze that you can navigate through in VR.  In order to successfully complete the maze, you need to first find a key that will allow you to unlock the door that hides the treasure at the end of the maze.  You navigate through the winding corridors by looking at waypoints and clicking on them to move, and you can also collect coins as you progress through the maze!
+
+##Installation
+If you own an Android device, you can install the app by simply copying the 
 
 <b>Google VR SDK:</b> Version 1.0.3
 
