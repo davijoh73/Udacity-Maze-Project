@@ -6,7 +6,7 @@ This project is part of the Udacity VR Nanodegree program, and consists of a maz
 * If you own an iPhone, you will need to follow the instructions below for **contributing** to this app, and then switch to the iOS platform in build settings before rebuilding and running on your phone.
 
 ## Contributing
-You will need to download and install Unity, and the Google VR SDK Plugin to be able to 
+You will need to download and install the [Unity Game Engine](https://unity3d.com/), as well as the [Google VR SDK Plugin for Unity](https://developers.google.com/vr/unity/download) to be able to edit this app.  Next, you will need to clone this GitHub repo, and then open the `vrnd-course3-starter-project` in the Unity editor to begin making modifications to the maze project.
 
 ## Lessons Learned
 **What I liked:** I really enjoyed using scripting to make the key unlock the door and for animating the door and the various objects you could collect throughout the maze.  It's amazing the level of control you have when using the scripts and how they can be combined with the different objects in the Unity editor to help create an interactive world.  I also enjoyed using Git to make commits throughout this project, which enabled me to be a little braver with my changes and coding, knowing that I could fall back on a previous commit if needed.
